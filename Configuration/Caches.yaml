@@ -1,0 +1,12 @@
+#                                                                        #
+# Caches configuration                                                   #
+#                                                                        #
+# This file contains a list of caches which are automatically registered #
+# while initializing the cache framework. If caches want to benefit from #
+# the automatic flushing mechanisms (such as garbage collection and      #
+# automatic flushing by tag) they must be registered in a Caches.yaml    #
+# file.                                                                  #
+#                                                                        #
+
+Flow_Proxy_Response:
+  frontend: TYPO3\Proxy\Http\Cache\RequestFrontend

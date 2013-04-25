@@ -1,0 +1,13 @@
+{
+    "name": "typo3/proxy",
+    "type": "typo3-flow-package",
+    "description": "",
+    "require": {
+        "typo3/flow": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "TYPO3\\Proxy": "Classes"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+#                                                                        #
+# Configuration for the TYPO3 Flow Framework                             #
+#                                                                        #
+# This file contains the default base configuration for the TYPO3 Flow   #
+# Framework. Don't modify this file but add configuration options to     #
+# the Settings.yaml file in the in global Configuration/ directory       #
+# instead.                                                               #
+#                                                                        #
+
+TYPO3:
+
+  Proxy:
+
+    log:
+
+      proxyLogger:
+        logger: TYPO3\Flow\Log\Logger
+        backend: TYPO3\Flow\Log\Backend\FileBackend
+        backendOptions:
+           logFileURL: %FLOW_PATH_DATA%Logs/Proxy.log
+           createParentDirectories: TRUE
+           severityThreshold: %LOG_INFO%
+           maximumLogFileSize: 10485760
+           logFilesToKeep: 1
+           logMessageOrigin: FALSE
